@@ -1,0 +1,35 @@
+{
+  "name": "oauth-workshop",
+  "version": "1.0.0",
+  "description": "Implementing oauth from scratch",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "precommit": "eslint './**/*.js'",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewglover/oauth-workshop.git"
+  },
+  "author": "Matt Glover (https://github.com/matthewglover)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewglover/oauth-workshop/issues"
+  },
+  "homepage": "https://github.com/matthewglover/oauth-workshop#readme",
+  "dependencies": {
+    "env2": "^2.1.1",
+    "hapi": "^16.0.1",
+    "inert": "^4.0.3",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1",
+    "husky": "^0.11.9"
+  }
+}
