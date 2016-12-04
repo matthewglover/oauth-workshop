@@ -21,7 +21,8 @@ module.exports = {
   handler(req, reply) {
     getAccessToken(req.query.code, (err, response, body) => {
       if (err) throw err;
-      reply(body);
+      req.cookieAuth.set(JSON.parse(body));
+      reply.redirect('/user_details');
     });
   },
 };
