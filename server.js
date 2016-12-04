@@ -1,6 +1,7 @@
 const Hapi = require('hapi');
 const Inert = require('inert');
 
+const routes = require('./routes');
 
 const defaultRoute = {
   method: 'GET',
@@ -20,7 +21,7 @@ server.connection({ port: process.env.PORT || 4000 });
 server.register([Inert], (registerError) => {
   if (registerError) throw registerError;
 
-  server.route([defaultRoute]);
+  server.route([defaultRoute, ...routes]);
 });
 
 module.exports = server;
