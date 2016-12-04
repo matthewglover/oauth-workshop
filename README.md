@@ -16,4 +16,6 @@ Authenticating with Github using Hapi and Request
 ```
 export BASE_URL=[your-base-url]
 export CLIENT_ID=[your-github-client-id]
+export CLIENT_SECRET=[your-github-client-secret]
 ```
+3. Run the server `npm start` or (in development mode using nodemon) `npm run dev`
